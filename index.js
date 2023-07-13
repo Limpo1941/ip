@@ -18,6 +18,12 @@ app.get('/', async (req, res) => {
   res.send(`You are from ${JSON.stringify(fetch_data)}`)
 })
 
+app.get('/help', async (req, res) => {
+res.send('<h1>HELP</h1>')
+})
+// async - 1 in sec
+// sync - 100 in sec
+
 
 let port = process.env.PORT || 3000
 
