@@ -19,8 +19,8 @@ app.get('/', async (req, res) => {
 })
 
 
+let port = process.env.PORT || 3000
 
 
-
-app.listen('3000')
+app.listen(port)
 // http://localhost:3000
