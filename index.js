@@ -15,7 +15,7 @@ app.get('/', async (req, res) => {
   var fetch_data = await fetch_res.json()
   console.log(fetch_data)
 
-  res.send(`You are from ${fetch_data}`)
+  res.send(`You are from ${JSON.stringify(fetch_data)}`)
 })
 
 
